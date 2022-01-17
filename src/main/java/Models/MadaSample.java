@@ -2,8 +2,6 @@ package Models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.Date;
-
 public class MadaSample {
 
     @JsonProperty("MDACode") String MDACode;

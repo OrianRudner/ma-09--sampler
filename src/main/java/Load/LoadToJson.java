@@ -17,7 +17,6 @@ public class LoadToJson extends LoadDataToFile implements LoadData{
         ObjectMapper objectMapper = new ObjectMapper();
 
         int fileNumber = 1;
-        String temp = "";
         for (int i = 1; i < records.size(); i++) {
 
             if (i % 50000 == 0){
