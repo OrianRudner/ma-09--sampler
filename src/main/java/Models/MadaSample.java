@@ -15,12 +15,12 @@ public class MadaSample {
     @JsonProperty("street") String street;
     @JsonProperty("buildingNumber") int buildingNumber;
     @JsonProperty("barcode") String barcode;
-    @JsonProperty("getDate") Date getDate;
-    @JsonProperty("takeDate") Date takeDate;
-    @JsonProperty("resultDate") Date resultDate;
+    @JsonProperty("getDate") String getDate;
+    @JsonProperty("takeDate") String takeDate;
+    @JsonProperty("resultDate") String resultDate;
 
     public MadaSample(String MDACode, String IDNum, int IDType, String firstName, String lastName, String city, String street,
-                      int buildingNumber, String barcode, Date getDate, Date takeDate, Date resultDate) {
+                      int buildingNumber, String barcode, String  getDate, String takeDate, String resultDate) {
         this.MDACode = MDACode;
         this.IDNum = IDNum;
         this.IDType = IDType;
