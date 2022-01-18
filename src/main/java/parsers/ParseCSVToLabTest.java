@@ -1,7 +1,7 @@
 package parsers;
 
 import Models.LabTest;
-import Models.MadaSample;
+import Models.LabTestList;
 import org.apache.commons.csv.CSVRecord;
 
 import java.text.ParseException;
@@ -16,6 +16,7 @@ public class ParseCSVToLabTest implements Parse{
 
         List<CSVRecord> records = list;
         List<LabTest> labRecords = new LinkedList<>();
+
         for (int i = 1; i < list.size(); i++) {
 
             Date birthDate = null;
@@ -27,7 +28,7 @@ public class ParseCSVToLabTest implements Parse{
                 e.printStackTrace();
             }
 
-            LabTest temp = new LabTest(records.get(i).get(0),
+            LabTest temp = new LabTest(Integer.parseInt(records.get(i).get(0)),
                     Integer.parseInt(records.get(i).get(1)),
                     records.get(i).get(2),
                     records.get(i).get(3),
